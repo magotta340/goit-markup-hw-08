@@ -407,7 +407,9 @@ img {
   text-align: center;
   margin: 0 auto;
   max-width: 1600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/overlay.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                  rgba(47, 48, 58, 0.4)),
+                    url(../images/hero/banner.jpg);
   background-color: var(--hero-background-color);
   background-repeat: no-repeat;
   background-position: center;
