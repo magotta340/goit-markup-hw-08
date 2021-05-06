@@ -27,7 +27,7 @@
 }
 
 .social-network__icon {
-  fill: $icons-color;
+  fill: $icon-color;
   transition: $transition-fill;
   .social-network__link:hover &,
   .social-network__link:focus & {

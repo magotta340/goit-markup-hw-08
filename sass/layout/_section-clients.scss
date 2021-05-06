@@ -18,14 +18,10 @@
 }
 
 .clients__item {
-  flex-basis: calc(
-    100% / #{$section-clients-mobile-set} - #{$section-clients-mobile-set-gap}
-  );
+  flex-basis: calc(100% / #{$section-clients-mobile-set} - #{$section-clients-mobile-set-gap});
   margin-left: #{$section-clients-mobile-set-gap};
   @media screen and (min-width: 768px) {
-    flex-basis: calc(
-      100% / #{$section-clients-tablet-set} - #{$section-clients-tablet-set-gap}
-    );
+    flex-basis: calc(100% / #{$section-clients-tablet-set} - #{$section-clients-tablet-set-gap});
     margin-left: #{$section-clients-tablet-set-gap};
   }
   @media screen and (max-width: 1199px) {
@@ -33,9 +29,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc(
-      100% / #{$section-clients-desktop-set} - #{$section-clients-desktop-set-gap}
-    );
+    flex-basis: calc(100% / #{$section-clients-desktop-set} - #{$section-clients-desktop-set-gap});
     margin-left: #{$section-clients-desktop-set-gap};
   }
 }
@@ -45,7 +39,7 @@
   justify-content: center;
   align-items: center;
   height: 90px;
-  border: 1px solid $icons-color;
+  border: 1px solid $icon-color;
   border-radius: 4px;
   transition: $transition-bg-color;
   &:hover,
@@ -65,7 +59,7 @@
 }
 
 .clients__icon {
-  fill: $icons-color;
+  fill: $icon-color;
   transition: $transition-fill;
   .clients__link:hover &,
   .clients__link:focus & {
