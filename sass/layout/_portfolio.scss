@@ -40,8 +40,8 @@
 }
 
 .filter-cards__item {
-  display: flex;
-  border: 1px solid $filter-box;
+  //display: flex;
+  //border: 1px solid $filter-box;
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
@@ -49,23 +49,22 @@
   }
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc(
-      100% / #{$section-filter-link-tablet-set} - #{$section-filter-link-tablet-gap}
-    );
+    flex-basis: calc(100% / #{$section-filter-link-tablet-set} - #{$section-filter-link-tablet-gap});
     margin-left: #{$section-filter-link-tablet-gap};
     margin-bottom: 30px;
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc(
-      100% / #{$section-filter-link-desktop-set} - #{$section-filter-link-desktop-gap}
-    );
+    flex-basis: calc(100% / #{$section-filter-link-desktop-set} - #{$section-filter-link-desktop-gap});
     margin-left: #{$section-filter-link-desktop-gap};
   }
 }
 
 .filter-box {
   padding: 20px 24px;
+  flex-grow: 1;
+  border: 1px solid $filter-box;
+  border-top: none;
 }
 .filter-box__title {
   color: $text-title-color;
@@ -88,7 +87,11 @@
 }
 
 .filter-cards__link {
-  display: block;
+  //display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: stretch;
   transition: $transition-shadow;
   &:hover,
   &:focus {
